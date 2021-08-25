@@ -19,13 +19,13 @@ const handleUserInput = function (key) {
     process.exit();
   }else if(key === "w"){
     console.log("Move: up - w") 
-    connection.write('Move: up');  
+    connection.write('Move: up');   
   }else if(key === "a"){
     console.log("Move: left - a")
-    connection.write('Move: left');  
+    connection.write('Move: left');   
   }else if(key === "s"){
     console.log("Move: down - s")
-    connection.write('Move: down');  
+    connection.write('Move: down');    
   }else if(key === "d"){
     console.log("Move: right - d")
     connection.write('Move: right');  
