@@ -7,12 +7,18 @@ const connect = function () {
     port: 50542,
   });
 
+  conn.on('connect', () => {
+    conn.write('Name: PAO');
+    console.log("WO WOOO, you are now playing!")
+  })
   // interpret incoming data as text
   conn.setEncoding("utf8");
 
   conn.on('data', (data) => {
     console.log("Data! ", data)
   })
+
+   
   return conn;
 };
 
