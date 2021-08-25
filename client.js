@@ -8,7 +8,7 @@ const connect = function () {
   });
 
   conn.on('connect', () => {
-    conn.write('Name: PAO');
+    conn.write('Name: PAO');   
     console.log("WO WOOO, you are now playing!")
   })
   // interpret incoming data as text
